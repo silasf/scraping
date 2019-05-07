@@ -14,3 +14,29 @@ $ scrapy crawl scraping -o got.json
 
 .djson [ { "price": value, "nome": "nome do produto", "link": "link da imagen"}]
 
+## Explicação
+
+- Introdução
+Essa aplicação usa Scrapy, que é utilizada para extrair dados de sítios. Optei por usar essa aplicação
+porque ela faz tudo que necessitamos, sendo que há facilidade de se comunicar com Django.
+- link para Scrapy https://scrapy.readthedocs.io/en/latest/intro/overview.html
+
+- Instação necessária
+- Python 3.5
+- Scrapy
+
+- Execuação
+$ scrapy crawl scraping -o got.json  
+
+- Explicação
+Scrapy é bem amplo, assim, uma explicação detalhada não será possível. Contudo, necessário sabermos sobre a classe Spiders, qual é usado para extrair informações dos sítios. Então é criado o seguinte arquivo dentro de spiders spiders/iscrapy.py
+
+- da criação o parse cuidará da manipulação de cada requisição feita. Assim, tratamos nossos dados dentro do passe. Para isso é necessário descobrir como o html é formado. Uma vez que se saiba seu formato é passado para parte final de construção do json. 
+
+- Há alguns métodos que facilitam a manipulação dos dados requisitados. Nessa implementação o CSS retorna algo semelhante há uma lista de objetos. Note que é importante saber sobre a estrutura para saber oque precisa trazer ou manipular. nesse caso 
+buscamos response.css('a.woocommerce-LoopProduct-link.woocommerce-loop-product__link') que retorna a lista de itens necessários para nosso objetivo. após essa parte é usado método get para obter texto (é necessário explicar ::text informando que se quer apenas o texto). já para atributos é utilizado attrib['expl'], seu parâmetro diz qual atributo é desejado.
+
+a execução do Scrapy já exibe saída .json 
+$ scrapy crawl scraping -o got.json
+chamada [parametro] nome do scrapy [parâmetro saída] [nome.tipo]
+
