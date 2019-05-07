@@ -12,5 +12,5 @@ $ scrapy crawl scraping -o got.json
 
 ## saída esperada
 
-djson[ { "price": value, "nome": "nome do produto", "link": "link da imagen"}]
+.djson [ { "price": value, "nome": "nome do produto", "link": "link da imagen"}]
 
