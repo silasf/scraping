@@ -1,0 +1,11 @@
+- Introdução
+Essa aplicação usa Scrapy, que é utilizada para extrair dados de sítios. Optei por usar essa aplicação
+porque ela faz tudo que necessitamos, sendo que há facilidade de se comunicar com Django.
+- link para Scrapy https://scrapy.readthedocs.io/en/latest/intro/overview.html
+
+- Instação necessária
+- Python 3.5
+- Scrapy
+
+- Execuação
+$ scrapy crawl scraping -o got.json  
