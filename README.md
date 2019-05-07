@@ -25,7 +25,7 @@ porque ela faz tudo que necessitamos, sendo que há facilidade de se comunicar c
 - Python 3.5
 - Scrapy
 
-- Execuação
+- Execuação  
 $ scrapy crawl scraping -o got.json  
 
 - Explicação
