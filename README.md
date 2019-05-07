@@ -38,5 +38,5 @@ buscamos response.css('a.woocommerce-LoopProduct-link.woocommerce-loop-product__
 
 a execução do Scrapy já exibe saída .json   
 $ scrapy crawl scraping -o got.json  
-chamada [parametro] nome do scrapy [parâmetro saída] [nome.tipo]
+[chamada] [parametro] [nome do scrapy] [parâmetro saída] [nome.tipo]
 
