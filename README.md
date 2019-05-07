@@ -7,7 +7,7 @@ teste
 - Scrapy [install+guide](https://scrapy.readthedocs.io/en/latest/intro/install.html)
 
 ## Run
-$ cd scraping
+$ cd scraping  
 $ scrapy crawl scraping -o got.json
 
 ## saída esperada
